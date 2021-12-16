@@ -1,9 +1,9 @@
-let estado = '';
-let nota = 60
+let estado = 'aprovada';
+let nota = 81
 
-switch (nota) {
-  case nota >= 80:
-    estado = 'aprovada'
+switch (estado) {
+  case 'aprovada':
+    nota >= 80
     break;
   case nota < 80 && nota >= 60:
     estado = 'lista'
