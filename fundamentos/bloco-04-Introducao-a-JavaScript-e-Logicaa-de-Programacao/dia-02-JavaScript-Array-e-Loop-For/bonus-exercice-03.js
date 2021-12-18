@@ -1,5 +1,5 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let novoArray = [];
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+const novoArray = [];
 
 for (let index = 0; index < numbers.length; index += 1) {
   if (index + 1 < numbers.length) {
@@ -9,4 +9,3 @@ for (let index = 0; index < numbers.length; index += 1) {
   }
 }
 console.log(novoArray);
-[45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
