@@ -1,13 +1,13 @@
-array = [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (let index = 1; index < array.length; index += 1) {
+for (let index = 1; index < numbers.length; index += 1) {
   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
     // alterado sinal de "menor" para "maior". Assim ordenando em forma Decrescente!
-    if (array[index] > array[secondIndex]) {
-      let position = array[index];
-      array[index] = array[secondIndex];
-      array[secondIndex] = position;
+    if (numbers[index] > numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
     }
   }
 }
-console.log(array);
+console.log(numbers);
