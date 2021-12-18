@@ -1,6 +1,6 @@
 const base = 5;
-let heigth = 8;
-let area = base * heigth;
+const heigth = 8;
+const area = base * heigth;
 
 const perimeter = 5 + 5 + 8 + 8;
 

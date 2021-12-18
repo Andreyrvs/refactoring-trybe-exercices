@@ -1,17 +1,20 @@
-let estado = 'aprovada';
-let nota = 81
+// Por alugum motivo não funciona corretamente =(
+/* 
+let estado = 'apravada';
+const nota = 71;
 
 switch (estado) {
   case 'aprovada':
-    nota >= 80
+    nota >= 80;
     break;
-  case nota < 80 && nota >= 60:
-    estado = 'lista'
+  case 'lista':
+    nota < 80 && nota >= 60;
     break;
-  case nota < 60:
-    estado = 'reprovada'
+  case 'reprovada':
+    nota < 60;
     break;
   default:
     estado = 'não se aplica';
 }
 console.log(estado);
+ */

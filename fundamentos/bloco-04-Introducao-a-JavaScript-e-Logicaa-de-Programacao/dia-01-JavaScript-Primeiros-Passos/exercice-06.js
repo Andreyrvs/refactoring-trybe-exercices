@@ -22,6 +22,4 @@ switch (pecaXadrez.toLowerCase()) {
   default:
     console.log('Erro, peça inválida!');
     break;
-  
-
 }
