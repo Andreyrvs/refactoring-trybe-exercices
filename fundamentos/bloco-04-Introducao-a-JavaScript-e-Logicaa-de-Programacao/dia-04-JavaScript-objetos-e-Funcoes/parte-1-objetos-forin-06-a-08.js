@@ -15,16 +15,18 @@ const leitor = {
 const favoriteBook = `O livro favorito de ${leitor.nome} ${leitor.sobrenome} 
 se chama ${leitor.livrosFavoritos[0].titulo} `;
 
-// console.log(favoriteBook);
+console.log(favoriteBook);
 
 // ========= Exercice 07 ========= //
-
 leitor.livrosFavoritos[1] = {
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
   autor: 'JK Rowling',
   editor: 'Rocco',
-} 
-
-console.log(leitor);
+};
+// console.log(leitor);
 
 // ========= Exercice 08 ========= //
+const numberOfFavoriteBooks = `${leitor.nome}
+ tem ${leitor.livrosFavoritos.length} livros favoritos`;
+
+console.log(numberOfFavoriteBooks);
