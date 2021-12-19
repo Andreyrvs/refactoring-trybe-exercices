@@ -18,12 +18,12 @@ se chama ${leitor.livrosFavoritos[0].titulo} `;
 console.log(favoriteBook);
 
 // ========= Exercice 07 ========= //
-leitor.livrosFavoritos[1] = {
+leitor.livrosFavoritos.push({
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
   autor: 'JK Rowling',
   editor: 'Rocco',
-};
-// console.log(leitor);
+});
+console.log(leitor);
 
 // ========= Exercice 08 ========= //
 const numberOfFavoriteBooks = `${leitor.nome}
