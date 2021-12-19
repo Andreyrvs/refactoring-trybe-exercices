@@ -1,28 +1,28 @@
 // ========= Exercice 01 ========= //
-// function sum(a, b) {
-//   return a + b;
-// }
-// console.log(sum(5, 4));
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(5, 4));
 
-// function subtract(a, b) {
-//   return a - b;
-// }
-// console.log(subtract(5, 4));
+function subtract(a, b) {
+  return a - b;
+}
+console.log(subtract(5, 4));
 
-// function multiply(a, b) {
-//   return a * b;
-// }
-// console.log(multiply(5, 4));
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(5, 4));
 
-// function divide(a, b) {
-//   return a / b;
-// }
-// console.log(divide(5, 4));
+function divide(a, b) {
+  return a / b;
+}
+console.log(divide(5, 4));
 
-// function module(a, b) {
-//   return a % b;
-// }
-// console.log(module(5, 4));
+function module(a, b) {
+  return a % b;
+}
+console.log(module(5, 4));
 
 // ========= Exercice 02 ========= //
 function greaterThanTwo(a, b) {
