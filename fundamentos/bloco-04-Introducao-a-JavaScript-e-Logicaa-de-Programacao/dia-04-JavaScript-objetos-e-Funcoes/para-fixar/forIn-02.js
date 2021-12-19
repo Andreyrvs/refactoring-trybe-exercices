@@ -5,4 +5,9 @@ const car = {
   manufacturer: 'Audi',
   year: 2020,
 };
-console.log(car);
+
+for (const key in car) {
+  if (car) {
+    console.log(`${key}: ${car[key]}`);
+  }
+}
