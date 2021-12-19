@@ -4,11 +4,12 @@ Copiar
 const names = {
   person1: 'João',
   person2: 'Maria',
-  person3: 'Jorge' 
+  person3: 'Jorge',
 };
 
 for (const key in names) {
-  const grettings = `Olá ${names[key]}`
-  console.log(grettings);
+  if (names) {
+    const grettings = `Olá ${names[key]}`;
+    console.log(grettings);
+  }
 }
- 
