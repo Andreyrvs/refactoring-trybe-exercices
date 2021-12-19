@@ -6,15 +6,18 @@ const info = {
 
 // ========= Exercice 01 ========= //
 const grettings = `Bem-vinda, ${info.personagem}`
-console.log(grettings);
+// console.log(grettings);
 
 // ========= Exercice 02 ========= //
 info.recorrente = 'Sim';
-console.log(info);
+// console.log(info);
 
 // ========= Exercice 03 ========= //
 for (const key in info) {
-  console.log(key);
+  // console.log(key);
 }
 
 // ========= Exercice 04 ========= //
+for (const key in info) {
+  console.log(info[key]);
+}
