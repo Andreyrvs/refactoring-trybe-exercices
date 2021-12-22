@@ -12,7 +12,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
 function mudaP() {
-  const twoYears = document.querySelector('.paragraph');
+  const twoYears = document.getElementsByTagName('p')[1];
   twoYears.innerHTML = 'Trabalhando em uma empresa!!';
   return twoYears;
 }
@@ -40,7 +40,7 @@ function corrigeH1() {
 corrigeH1();
 
 function toUppercase() {
-  const tagP = document.getElementsByTagName('p')[0];
+  const tagP = document.getElementsByTagName('p')[1];
   tagP.innerHTML = tagP.innerHTML.toUpperCase();
 
   return tagP
