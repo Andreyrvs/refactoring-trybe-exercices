@@ -43,7 +43,7 @@ function toUppercase() {
   const tagP = document.getElementsByTagName('p')[1];
   tagP.innerHTML = tagP.innerHTML.toUpperCase();
 
-  return tagP
+  return tagP;
 }
 toUppercase();
 
