@@ -12,7 +12,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
 function mudaP() {
-  const twoYears = document.querySelector('.two-years');
+  const twoYears = document.querySelector('.paragraph');
   twoYears.innerHTML = 'Trabalhando em uma empresa!!';
   return twoYears;
 }
@@ -34,7 +34,23 @@ changeColorCenter();
 
 function corrigeH1() {
   const title = document.querySelector('.title');
-  title.innerHTML = 'Exercício 5.1 - JavaScript'
-  return title
+  title.innerHTML = 'Exercício 5.1 - JavaScript';
+  return title;
 }
 corrigeH1();
+
+// function toUppercase() {
+//   const tagP = document.getElementsByTagName('p');
+//   tagP[0].innerHTML.toUpperCase();
+//   return tagP
+// }
+// toUppercase();
+
+function conloseLog() {
+  const tagP = document.getElementsByTagName('p');
+
+  for (let index = 0; index < tagP.length; index += 1) {
+    console.log(tagP[index].innerText); 
+  }
+}
+conloseLog();
