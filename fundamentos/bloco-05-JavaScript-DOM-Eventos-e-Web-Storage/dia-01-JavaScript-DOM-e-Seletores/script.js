@@ -39,18 +39,19 @@ function corrigeH1() {
 }
 corrigeH1();
 
-// function toUppercase() {
-//   const tagP = document.getElementsByTagName('p');
-//   tagP[0].innerHTML.toUpperCase();
-//   return tagP
-// }
-// toUppercase();
+function toUppercase() {
+  const tagP = document.getElementsByTagName('p')[0];
+  tagP.innerHTML = tagP.innerHTML.toUpperCase();
+
+  return tagP
+}
+toUppercase();
 
 function conloseLog() {
   const tagP = document.getElementsByTagName('p');
 
   for (let index = 0; index < tagP.length; index += 1) {
-    console.log(tagP[index].innerText); 
+    console.log(tagP[index].innerHTML);
   }
 }
 conloseLog();
