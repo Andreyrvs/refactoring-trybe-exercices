@@ -31,3 +31,10 @@ function changeColorCenter() {
   return centerContent;
 }
 changeColorCenter();
+
+function corrigeH1() {
+  const title = document.querySelector('.title');
+  title.innerHTML = 'Exercício 5.1 - JavaScript'
+  return title
+}
+corrigeH1();
