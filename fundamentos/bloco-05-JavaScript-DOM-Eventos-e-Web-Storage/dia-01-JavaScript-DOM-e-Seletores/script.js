@@ -13,12 +13,21 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
 function mudaP() {
   const twoYears = document.querySelector('.two-years');
-  return twoYears.innerHTML = 'Trabalhando em uma empresa!!';
+  twoYears.innerHTML = 'Trabalhando em uma empresa!!';
+  return twoYears;
 }
 mudaP();
 
-function changeColor() {
+function changeColorMain() {
   const mainContent = document.querySelector('.main-content');
-  return mainContent.style.backgroundColor = 'rgb(76,164,109)'
+  mainContent.style.backgroundColor = 'rgb(76,164,109)';
+  return mainContent;
 }
-changeColor();
+changeColorMain();
+
+function changeColorCenter() {
+  const centerContent = document.querySelector('.center-content');
+  centerContent.style.backgroundColor = 'white';
+  return centerContent;
+}
+changeColorCenter();
