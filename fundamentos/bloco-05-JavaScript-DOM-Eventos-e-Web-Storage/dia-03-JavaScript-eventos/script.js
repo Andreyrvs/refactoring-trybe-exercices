@@ -20,35 +20,25 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 // ========== Exercice 01 ========== //
 const getDaysList = document.getElementById('days');
 
-function generateHoliday(day, dayItem) {
-  if (day === 24 || day === 25 || day === 31) {
-    dayItem.className = 'day holiday ';
-    dayItem.innerHTML = day;
-    getDaysList.appendChild(dayItem);
-  }
-}
-
-function generateFriday(day, dayItem) {
-  if (day === 4 || day === 11 || day === 18 || day === 25) {
-    dayItem.className = 'day Friday';
-    dayItem.innerHTML = day;
-    getDaysList.appendChild(dayItem);
-  }
-}
-
-function generateDays(day, dayItem) {
-  dayItem.className = 'day';
-  dayItem.innerHTML = day;
-  getDaysList.appendChild(dayItem);
-}
+// function generateHoliday(day, dayItem) {
 
 function createDaysOfMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const day = dezDaysList[index];
     const dayItem = document.createElement('li');
-    generateHoliday(day, dayItem);
-    generateFriday(day, dayItem);
-    generateDays(day, dayItem);
+    if (day === 24 || day === 25 || day === 31) {
+      dayItem.className = 'day holiday ';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    } else if (day === 4 || day === 11 || day === 18 || day === 25) {
+      dayItem.className = 'day Friday';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    } else {
+      dayItem.className = 'day';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    }
   }
 }
 createDaysOfMonth();
@@ -60,9 +50,30 @@ const getBtnContainer = document.querySelector('.buttons-container');
 function btnFeriados() {
   const btnItem = document.createElement('button');
   btnItem.id = 'btn-holiday';
-  btnItem.innerText = 'Feriados'
+  btnItem.innerText = 'Feriados';
   getBtnContainer.appendChild(btnItem);
 }
 btnFeriados();
 
 // ========== Exercice 03 ========== //
+
+function displayHoliday() {
+  const getHolidayBtn = document.querySelector('#btn-holiday');
+  const getHoliday = document.querySelectorAll('.holiday');
+  const colorRgb = 'rgb(238, 238, 238)';
+  const setNewColor = 'white';
+
+  getHolidayBtn.addEventListener('click', () => {
+    for (let index = 0; index < getHoliday.length; index += 1) {
+      if (getHoliday[index].style.backgroundColor === setNewColor) {
+        getHoliday[index].style.backgroundColor = colorRgb;
+      } else {
+        getHoliday[index].style.backgroundColor = setNewColor;
+      }
+    }
+  });
+}
+displayHoliday();
+
+// ========== Exercice 04 ========== //
+
