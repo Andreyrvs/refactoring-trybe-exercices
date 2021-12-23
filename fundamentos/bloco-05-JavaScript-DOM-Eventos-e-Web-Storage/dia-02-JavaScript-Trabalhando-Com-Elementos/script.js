@@ -20,3 +20,8 @@ tagP.innerHTML = 'Algum Texto';
 centerContent.appendChild(tagP);
 
 // ===== Exercice 05 ===== //
+const leftContent = document.createElement('section');
+leftContent.innerHTML = 'Esquerda'
+mainContent.appendChild(leftContent);
+
+// ===== Exercice 06 ===== //
