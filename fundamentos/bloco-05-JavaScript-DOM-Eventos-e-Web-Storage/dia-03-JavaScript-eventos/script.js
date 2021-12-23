@@ -141,3 +141,17 @@ function newTaskDiv(color) {
   tasksContainer.appendChild(divItem);
 }
 newTaskDiv('red');
+
+// ========== Exercice 08 ========== //
+function taskSelected() {
+  const getTask = document.querySelector('.task');
+
+  getTask.addEventListener('click', (event) => {
+    if (event.target.className === 'task') {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+taskSelected();
