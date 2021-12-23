@@ -68,3 +68,5 @@ const thirdH3 = document.createElement('h3');
 thirdH3.className = 'description';
 thirdH3.innerHTML = 'h3 com descricao';
 mainContent.appendChild(thirdH3);
+
+mainContent.removeChild(leftContent);
