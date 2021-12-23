@@ -20,3 +20,6 @@ const pai = document.querySelector('#pai');
 console.log(estouAqui.nextSibling);
 
 // ===== Exercico 07 ===== //
+console.log(estouAqui.nextElementSibling);
+
+// ===== Exercico 08 ===== //
