@@ -20,12 +20,22 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 // ========== Exercice 01 ========== //
 const idDays = document.getElementById('days');
 
+function holidayFriday(element, tag) {
+  if (element === 24 || element === 25 || element === 31) {
+    tag.className += 'holiday ';
+  }
+  if (element === 4 || element === 11 || element === 18 || element === 25) {
+    tag.className += 'Friday';
+  }
+}
+
 function createDaysOfMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const creatTagLi = document.createElement('li');
-    creatTagLi.className = 'day';
+    creatTagLi.className = 'day ';
     creatTagLi.innerHTML = dezDaysList[index];
     idDays.appendChild(creatTagLi);
+    holidayFriday(dezDaysList[index], creatTagLi)
   }
 }
 createDaysOfMonth();
