@@ -77,3 +77,10 @@ displayHoliday();
 
 // ========== Exercice 04 ========== //
 
+function btnSextaFeira() {
+  const btnItem = document.createElement('button');
+  btnItem.id = 'btn-friday';
+  btnItem.innerText = 'Sexta-feira';
+  getBtnContainer.appendChild(btnItem);
+}
+btnSextaFeira();
