@@ -32,4 +32,9 @@ rightContent.innerHTML = 'Direita';
 mainContent.appendChild(rightContent);
 
 // ===== Exercice 06 ===== //
+const img = document.createElement('img');
+img.src = 'https://picsum.photos/200';
+img.className = 'small-image';
+leftContent.appendChild(img);
 
+// ===== Exercice 07 ===== //
