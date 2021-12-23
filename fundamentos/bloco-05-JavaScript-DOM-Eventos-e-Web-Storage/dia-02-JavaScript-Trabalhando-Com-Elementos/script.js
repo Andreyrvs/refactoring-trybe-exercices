@@ -1,11 +1,16 @@
 // ===== Exercice 01 ===== //
 const body = document.querySelector('body');
 const h1 = document.createElement('h1');
-h1.innerHTML = 'sou h1'
-body.appendChild(h1)
+body.appendChild(h1);
 console.log(body);
 
 // ===== Exercice 02 ===== //
-const main = document.createElement('main');
-main.className = 'main-content';
-body.appendChild(main);
+const mainContent = document.createElement('main');
+mainContent.className = 'main-content';
+body.appendChild(mainContent);
+
+// ===== Exercice 03 ===== //
+
+const centerContent = document.createElement('section');
+centerContent.className = 'center-content';
+mainContent.appendChild(centerContent);
