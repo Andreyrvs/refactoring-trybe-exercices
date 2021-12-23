@@ -55,3 +55,14 @@ createDaysOfMonth();
 
 // ========== Exercice 02 ========== //
 
+const getBtnContainer = document.querySelector('.buttons-container');
+
+function btnFeriados() {
+  const btnItem = document.createElement('button');
+  btnItem.id = 'btn-holiday';
+  btnItem.innerText = 'Feriados'
+  getBtnContainer.appendChild(btnItem);
+}
+btnFeriados();
+
+// ========== Exercice 03 ========== //
