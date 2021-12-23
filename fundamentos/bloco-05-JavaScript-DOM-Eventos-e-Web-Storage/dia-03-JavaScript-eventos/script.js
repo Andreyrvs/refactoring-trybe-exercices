@@ -144,10 +144,11 @@ newTaskDiv('red');
 
 // ========== Exercice 08 ========== //
 function taskSelected() {
+  const selectedTask = document.getElementsByClassName('task selected')
   const getTask = document.querySelector('.task');
 
   getTask.addEventListener('click', (event) => {
-    if (event.target.className === 'task') {
+    if (selectedTask.length === 0) {
       event.target.className = 'task selected';
     } else {
       event.target.className = 'task';
