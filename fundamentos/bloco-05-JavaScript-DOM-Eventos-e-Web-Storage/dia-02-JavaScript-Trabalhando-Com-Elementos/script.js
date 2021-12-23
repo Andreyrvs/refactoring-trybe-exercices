@@ -66,4 +66,4 @@ for (let index = 1; index < 3; index += 1) {
 mainContent.removeChild(leftContent);
 
 // ===== Exercice alteracoes e remocoes 04 ===== //
-
+rightContent.style.margin = 'auto';
