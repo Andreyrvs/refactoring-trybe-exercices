@@ -1,8 +1,7 @@
 // ===== Exercice 01 ===== //
 const body = document.querySelector('body');
 const h1 = document.createElement('h1');
-h1.className = 'title';
-h1.innerHTML = 'Titulo';
+h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
 body.appendChild(h1);
 
 // ===== Exercice 02 ===== //
@@ -17,19 +16,17 @@ mainContent.appendChild(centerContent);
 
 // ===== Exercice 04 ===== //
 const tagP = document.createElement('p');
-tagP.innerHTML = 'Algum Texto';
+tagP.innerHTML = 'Texto show';
 centerContent.appendChild(tagP);
 
 // ===== Exercice 05 ===== //
 const leftContent = document.createElement('section');
 leftContent.className = 'left-content';
-leftContent.innerHTML = 'Esquerda';
 mainContent.appendChild(leftContent);
 
 // ===== Exercice 06 ===== //
 const rightContent = document.createElement('section');
 rightContent.className = 'right-content';
-rightContent.innerHTML = 'Direita';
 mainContent.appendChild(rightContent);
 
 // ===== Exercice 07 ===== //
@@ -53,13 +50,20 @@ for (const number in arrayNumbers) {
   }
 }
 
-console.log(mainContent);
-
 // ===== Exercice 09 ===== //
 for (let index = 1; index < 3; index += 1) {
   const elementH3 = document.createElement('h3');
   elementH3.innerHTML = `Show ${index}`;
   mainContent.appendChild(elementH3);
+}
+// ===== Exercice alteracoes e remocoes 01 ===== //
+const title = document.querySelector('h1');
+title.className = 'title';
+
+// ===== Exercice alteracoes e remocoes 02 ===== //
+const elementH3 = document.getElementsByTagName('h3');
+for (let index = 0; index < 3; index += 1) {
+  elementH3[index].className = 'description';
 }
 
 // ===== Exercice alteracoes e remocoes 03 ===== //
@@ -69,4 +73,7 @@ mainContent.removeChild(leftContent);
 rightContent.style.margin = 'auto';
 
 // ===== Exercice alteracoes e remocoes 05 ===== //
-centerContent.style.backgroundColor = 'darkGreen'
+centerContent.style.backgroundColor = 'darkGreen';
+
+// ===== Exercice alteracoes e remocoes 06 ===== //
+arrayNumbers.remove('nove');
