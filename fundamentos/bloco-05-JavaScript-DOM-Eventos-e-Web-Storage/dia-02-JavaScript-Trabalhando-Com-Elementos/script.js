@@ -1,8 +1,8 @@
 // ===== Exercice 01 ===== //
 const body = document.querySelector('body');
 const h1 = document.createElement('h1');
-h1.className = 'title'
-h1.innerHTML = 'Titulo'
+h1.className = 'title';
+h1.innerHTML = 'Titulo';
 body.appendChild(h1);
 
 // ===== Exercice 02 ===== //
@@ -42,31 +42,28 @@ leftContent.appendChild(img);
 const ul = document.createElement('ul');
 rightContent.appendChild(ul);
 
-const arrayNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+const arrayNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 
+'seis', 'sete', 'oito', 'nove', 'dez'];
 
 for (const number in arrayNumbers) {
   if (arrayNumbers) {
     const li = document.createElement('li');
     li.innerHTML = arrayNumbers[number];
-    ul.appendChild(li)
+    ul.appendChild(li);
   }
 }
 
 console.log(mainContent);
+
 // ===== Exercice 09 ===== //
-const firstH3 = document.createElement('h3');
-firstH3.className = 'description';
-firstH3.innerHTML = 'h3 com descricao';
-mainContent.appendChild(firstH3);
+for (let index = 1; index < 3; index += 1) {
+  const elementH3 = document.createElement('h3');
+  elementH3.innerHTML = `Show ${index}`;
+  mainContent.appendChild(elementH3);
+}
 
-const secondH3 = document.createElement('h3');
-secondH3.className = 'description';
-secondH3.innerHTML = 'h3 com descricao';
-mainContent.appendChild(secondH3);
-
-const thirdH3 = document.createElement('h3');
-thirdH3.className = 'description';
-thirdH3.innerHTML = 'h3 com descricao';
-mainContent.appendChild(thirdH3);
-
+// ===== Exercice alteracoes e remocoes 03 ===== //
 mainContent.removeChild(leftContent);
+
+// ===== Exercice alteracoes e remocoes 04 ===== //
+
