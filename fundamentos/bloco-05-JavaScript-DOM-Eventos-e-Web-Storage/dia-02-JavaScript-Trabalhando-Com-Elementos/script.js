@@ -5,14 +5,14 @@ h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
 body.appendChild(h1);
 
 // ===== Exercice 02 ===== //
-const mainContent = document.createElement('main');
-mainContent.className = 'main-content';
-body.appendChild(mainContent);
+const elementMain = document.createElement('main');
+elementMain.className = 'main-content';
+body.appendChild(elementMain);
 
 // ===== Exercice 03 ===== //
 const centerContent = document.createElement('section');
 centerContent.className = 'center-content';
-mainContent.appendChild(centerContent);
+elementMain.appendChild(centerContent);
 
 // ===== Exercice 04 ===== //
 const tagP = document.createElement('p');
@@ -22,12 +22,12 @@ centerContent.appendChild(tagP);
 // ===== Exercice 05 ===== //
 const leftContent = document.createElement('section');
 leftContent.className = 'left-content';
-mainContent.appendChild(leftContent);
+elementMain.appendChild(leftContent);
 
 // ===== Exercice 06 ===== //
 const rightContent = document.createElement('section');
 rightContent.className = 'right-content';
-mainContent.appendChild(rightContent);
+elementMain.appendChild(rightContent);
 
 // ===== Exercice 07 ===== //
 const img = document.createElement('img');
@@ -54,26 +54,27 @@ for (const number in arrayNumbers) {
 for (let index = 1; index < 3; index += 1) {
   const elementH3 = document.createElement('h3');
   elementH3.innerHTML = `Show ${index}`;
-  mainContent.appendChild(elementH3);
+  elementH3.className = 'description';
+  elementMain.appendChild(elementH3);
 }
 // ===== Exercice alteracoes e remocoes 01 ===== //
 const title = document.querySelector('h1');
 title.className = 'title';
 
 // ===== Exercice alteracoes e remocoes 02 ===== //
-const elementH3 = document.getElementsByTagName('h3');
-for (let index = 0; index < 3; index += 1) {
-  elementH3[index].className = 'description';
-}
 
 // ===== Exercice alteracoes e remocoes 03 ===== //
-mainContent.removeChild(leftContent);
+const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+elementMain.removeChild(sectionLeftContent);
 
 // ===== Exercice alteracoes e remocoes 04 ===== //
-rightContent.style.margin = 'auto';
+const sectionRightContent = document.getElementsByClassName('right-content')[0];
+sectionRightContent.style.marginRight = 'auto';
 
 // ===== Exercice alteracoes e remocoes 05 ===== //
-centerContent.style.backgroundColor = 'darkGreen';
+const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+sectionCenterContent.style.backgroundColor = 'darkGreen';
 
 // ===== Exercice alteracoes e remocoes 06 ===== //
-arrayNumbers.remove('nove');
+ul.lastChild.remove();
+ul.lastChild.remove();
