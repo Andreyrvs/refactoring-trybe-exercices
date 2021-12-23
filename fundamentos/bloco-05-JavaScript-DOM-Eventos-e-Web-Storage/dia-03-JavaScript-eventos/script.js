@@ -121,3 +121,13 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+// ========== Exercice 07 ========== //
+
+function newTaskSpan(span) {
+  const getMyTasks = document.querySelector('.my-tasks');
+  const spanItem = document.createElement('span');
+  spanItem.innerText = span;
+  getMyTasks.appendChild(spanItem);
+}
+newTaskSpan('Nadar');
