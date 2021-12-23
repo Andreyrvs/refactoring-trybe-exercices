@@ -14,6 +14,9 @@ const pai = document.querySelector('#pai');
 // console.log(pai.firstElementChild);
 
 // ===== Exercico 05 ===== //
-console.log(estouAqui.parentElement.firstElementChild);
+// console.log(estouAqui.parentElement.firstElementChild);
 
 // ===== Exercico 06 ===== //
+console.log(estouAqui.nextSibling);
+
+// ===== Exercico 07 ===== //
