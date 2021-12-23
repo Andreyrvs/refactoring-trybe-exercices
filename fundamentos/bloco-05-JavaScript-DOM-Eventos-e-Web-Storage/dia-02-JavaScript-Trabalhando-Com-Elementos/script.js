@@ -21,7 +21,15 @@ centerContent.appendChild(tagP);
 
 // ===== Exercice 05 ===== //
 const leftContent = document.createElement('section');
+leftContent.className = 'left-content'
 leftContent.innerHTML = 'Esquerda'
 mainContent.appendChild(leftContent);
 
 // ===== Exercice 06 ===== //
+const rightContent = document.createElement('section');
+rightContent.className = 'right-content';
+rightContent.innerHTML = 'Direita';
+mainContent.appendChild(rightContent);
+
+// ===== Exercice 06 ===== //
+
