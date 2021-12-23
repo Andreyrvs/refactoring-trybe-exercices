@@ -125,9 +125,9 @@ dayMouseOut();
 // ========== Exercice 07 ========== //
 
 function newTaskSpan(span) {
-  const getMyTasks = document.querySelector('.my-tasks');
+  const tasksContainer = document.querySelector('.my-tasks');
   const spanItem = document.createElement('span');
   spanItem.innerText = span;
-  getMyTasks.appendChild(spanItem);
+  tasksContainer.appendChild(spanItem);
 }
 newTaskSpan('Nadar');
