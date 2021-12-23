@@ -23,4 +23,4 @@ const pai = document.querySelector('#pai');
 // console.log(estouAqui.nextElementSibling);
 
 // ===== Exercico 08 ===== //
-console.log(pai.children[2]);
+// console.log(pai.children[2]);

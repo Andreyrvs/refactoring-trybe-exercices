@@ -10,4 +10,6 @@ const filhoDoFilho = document.createElement('section');
 filhoDoFilho.id = 'filhoDoFilho';
 estouAqui.firstElementChild.appendChild(filhoDoFilho)
 
-console.log(estouAqui.firstElementChild);
+// console.log(estouAqui.firstElementChild);
+
+console.log(filhoDoFilho.parentElement.parentElement.nextElementSibling);
