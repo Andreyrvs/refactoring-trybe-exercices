@@ -55,10 +55,16 @@ for (const number in arrayNumbers) {
 console.log(mainContent);
 // ===== Exercice 09 ===== //
 const firstH3 = document.createElement('h3');
+firstH3.className = 'description';
+firstH3.innerHTML = 'h3 com descricao';
 mainContent.appendChild(firstH3);
 
 const secondH3 = document.createElement('h3');
+secondH3.className = 'description';
+secondH3.innerHTML = 'h3 com descricao';
 mainContent.appendChild(secondH3);
 
 const thirdH3 = document.createElement('h3');
+thirdH3.className = 'description';
+thirdH3.innerHTML = 'h3 com descricao';
 mainContent.appendChild(thirdH3);
