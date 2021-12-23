@@ -2,7 +2,6 @@
 const body = document.querySelector('body');
 const h1 = document.createElement('h1');
 body.appendChild(h1);
-console.log(body);
 
 // ===== Exercice 02 ===== //
 const mainContent = document.createElement('main');
@@ -51,4 +50,13 @@ for (const number in arrayNumbers) {
   }
 }
 
+console.log(mainContent);
 // ===== Exercice 09 ===== //
+const firstH3 = document.createElement('h3');
+mainContent.appendChild(firstH3);
+
+const secondH3 = document.createElement('h3');
+mainContent.appendChild(secondH3);
+
+const thirdH3 = document.createElement('h3');
+mainContent.appendChild(thirdH3);
