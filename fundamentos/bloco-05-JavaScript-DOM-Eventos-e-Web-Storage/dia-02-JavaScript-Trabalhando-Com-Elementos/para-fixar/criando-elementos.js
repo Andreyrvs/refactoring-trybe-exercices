@@ -1,4 +1,4 @@
-// import { pai, estouAqui } from './buscando-elementos';
+import { pai, estouAqui } from './buscando-elementos';
 
 const irmao = document.createElement('section');
 irmao.id = 'irmaoCriado';

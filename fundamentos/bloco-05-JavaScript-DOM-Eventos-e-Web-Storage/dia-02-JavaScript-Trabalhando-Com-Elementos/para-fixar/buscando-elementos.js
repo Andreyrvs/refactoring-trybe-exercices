@@ -1,6 +1,6 @@
 // ===== Exercico 01 ===== //
 const estouAqui = document.querySelector('#elementoOndeVoceEsta');
-// console.log(estouAqui);
+console.log(estouAqui);
 
 // ===== Exercico 02 ===== //
 estouAqui.parentElement.style.backgroundColor = 'red';
@@ -11,7 +11,7 @@ estouAqui.firstElementChild.innerHTML = 'Red light Green light';
 
 // ===== Exercico 04 ===== //
 const pai = document.querySelector('#pai');
-// console.log(pai.firstElementChild);
+console.log(pai.firstElementChild);
 
 // ===== Exercico 05 ===== //
 // console.log(estouAqui.parentElement.firstElementChild);
@@ -25,4 +25,4 @@ const pai = document.querySelector('#pai');
 // ===== Exercico 08 ===== //
 // console.log(pai.children[2]);
 
-// export { pai, estouAqui };
+export { pai, estouAqui };
