@@ -20,8 +20,6 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 // ========== Exercice 01 ========== //
 const getDaysList = document.getElementById('days');
 
-// function generateHoliday(day, dayItem) {
-
 function createDaysOfMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     const day = dezDaysList[index];
@@ -44,7 +42,6 @@ function createDaysOfMonth() {
 createDaysOfMonth();
 
 // ========== Exercice 02 ========== //
-
 const getBtnContainer = document.querySelector('.buttons-container');
 
 function btnFeriados() {
@@ -56,7 +53,6 @@ function btnFeriados() {
 btnFeriados();
 
 // ========== Exercice 03 ========== //
-
 function displayHoliday() {
   const getHolidayBtn = document.querySelector('#btn-holiday');
   const getHoliday = document.querySelectorAll('.holiday');
@@ -76,7 +72,6 @@ function displayHoliday() {
 displayHoliday();
 
 // ========== Exercice 04 ========== //
-
 function btnSextaFeira() {
   const btnItem = document.createElement('button');
   btnItem.id = 'btn-friday';
@@ -92,7 +87,6 @@ function displayFriday(fridaysArray) {
   const newFridayText = 'Sexta-feiraa';
 
   getFridayBtn.addEventListener('click', () => {
-    console.log(getFridayBtn);
     for (let index = 0; index < fridays.length; index += 1) {
       if (fridays[index].innerHTML !== newFridayText) {
         fridays[index].innerHTML = newFridayText;
@@ -105,3 +99,25 @@ function displayFriday(fridaysArray) {
 
 const dezFridays = [4, 11, 18, 25];
 displayFriday(dezFridays);
+
+// ========== Exercice 06 ========== //
+function dayMouseOver() {
+  const getDay = document.querySelector('#days');
+
+  getDay.addEventListener('mouseover', (event) => {
+    event.target.style.fontSize = '31px';
+    event.target.style.fontWeight = '600';
+  });
+}
+
+function dayMouseOut() {
+  const getDay = document.querySelector('#days');
+
+  getDay.addEventListener('mouseout', (event) => {
+    event.target.style.fontWeight = '200';
+    event.target.style.fontSize = '20px';
+  });
+}
+
+dayMouseOver();
+dayMouseOut();
