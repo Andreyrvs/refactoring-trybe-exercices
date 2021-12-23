@@ -1,6 +1,8 @@
 // ===== Exercice 01 ===== //
 const body = document.querySelector('body');
 const h1 = document.createElement('h1');
+h1.className = 'title'
+h1.innerHTML = 'Titulo'
 body.appendChild(h1);
 
 // ===== Exercice 02 ===== //
