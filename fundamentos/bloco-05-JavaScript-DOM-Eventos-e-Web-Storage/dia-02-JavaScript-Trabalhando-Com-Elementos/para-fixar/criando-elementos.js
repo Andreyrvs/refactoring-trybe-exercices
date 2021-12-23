@@ -1,3 +1,5 @@
+import { pai, estouAqui } from './buscando-elementos';
+
 const irmao = document.createElement('section');
 irmao.id = 'irmaoCriado';
 pai.appendChild(irmao);
@@ -8,7 +10,7 @@ estouAqui.appendChild(filhaCriado);
 
 const filhoDoFilho = document.createElement('section');
 filhoDoFilho.id = 'filhoDoFilho';
-estouAqui.firstElementChild.appendChild(filhoDoFilho)
+estouAqui.firstElementChild.appendChild(filhoDoFilho);
 
 // console.log(estouAqui.firstElementChild);
 
