@@ -17,9 +17,10 @@ const pai = document.querySelector('#pai');
 // console.log(estouAqui.parentElement.firstElementChild);
 
 // ===== Exercico 06 ===== //
-console.log(estouAqui.nextSibling);
+// console.log(estouAqui.nextSibling);
 
 // ===== Exercico 07 ===== //
-console.log(estouAqui.nextElementSibling);
+// console.log(estouAqui.nextElementSibling);
 
 // ===== Exercico 08 ===== //
+console.log(pai.children[2]);
