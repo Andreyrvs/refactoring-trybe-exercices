@@ -5,7 +5,7 @@ Você já aprendeu diversas formas de utilizar o JavaScript para manipular os el
 Agora você vai aprender como utilizar os eventos do JavaScript para fazer com que funções sejam executadas quando alguém as usam ou quando o navegador fizer alguma interação com a sua página web.
 
 # Recursos adicionais
-
+- [Jogos 2d ](http://www.lessmilk.com/games/10)
 - [Mais exercícios do W3Schools](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_events1)
 - [Como comparar datas no JavaScript](https://pt.stackoverflow.com/questions/217881/comparar-data-atual-com-javascript?rq=1)
 - [Como comparar datas no JavaScript de outra forma](https://medium.com/lucianobragaweb/comparar-datas-em-javascript-9b1d1febbe9a)
