@@ -1,1 +1,18 @@
 # DIA - 03
+
+## O que vamos aprender?
+Você já aprendeu diversas formas de utilizar o JavaScript para manipular os elementos HTML e até alterar os estilos da página, certo?
+Agora você vai aprender como utilizar os eventos do JavaScript para fazer com que funções sejam executadas quando alguém as usam ou quando o navegador fizer alguma interação com a sua página web.
+
+# Recursos adicionais
+
+- [Mais exercícios do W3Schools](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_events1)
+- [Como comparar datas no JavaScript](https://pt.stackoverflow.com/questions/217881/comparar-data-atual-com-javascript?rq=1)
+- [Como comparar datas no JavaScript de outra forma](https://medium.com/lucianobragaweb/comparar-datas-em-javascript-9b1d1febbe9a)
+- [Documentação sobre eventos do W3Schools](https://www.w3schools.com/js/js_htmldom_events.asp)
+- [Documentação sobre eventListener do W3Schools](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+- [Explicação na MDN sobre os motivos de eventos inline serem uma má prática.](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events#manipuladores_de_eventos_in-line_-_n%C3%A3o_use_esses)
+- [Exemplos de eventos em JavaScript do W3Schools](https://www.w3schools.com/js/js_events_examples.asp)
+- [Tutorial da Mozilla sobre eventos JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [Artigo da Mozilla sobre eventos JavaScript](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events)
+- [Livro 'Eloquent JavaScript', online e gratuito](https://eloquentjavascript.net/)
