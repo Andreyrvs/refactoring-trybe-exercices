@@ -1,4 +1,14 @@
+// ===== Exercico 01 ===== //
 const estouAqui = document.querySelector('#elementoOndeVoceEsta');
 // console.log(estouAqui);
 
+// ===== Exercico 02 ===== //
 estouAqui.parentElement.style.backgroundColor = 'red';
+
+// ===== Exercico 03 ===== //
+estouAqui.firstElementChild.innerHTML = 'Red light Green light';
+// console.log(estouAqui.firstElementChild);
+
+// ===== Exercico 04 ===== //
+const pai = document.querySelector('#pai');
+console.log(pai.firstElementChild);
