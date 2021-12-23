@@ -31,10 +31,24 @@ rightContent.className = 'right-content';
 rightContent.innerHTML = 'Direita';
 mainContent.appendChild(rightContent);
 
-// ===== Exercice 06 ===== //
+// ===== Exercice 07 ===== //
 const img = document.createElement('img');
 img.src = 'https://picsum.photos/200';
 img.className = 'small-image';
 leftContent.appendChild(img);
 
-// ===== Exercice 07 ===== //
+// ===== Exercice 08 ===== //
+const ul = document.createElement('ul');
+rightContent.appendChild(ul);
+
+const arrayNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (const number in arrayNumbers) {
+  if (arrayNumbers) {
+    const li = document.createElement('li');
+    li.innerHTML = arrayNumbers[number];
+    ul.appendChild(li)
+  }
+}
+
+// ===== Exercice 09 ===== //
