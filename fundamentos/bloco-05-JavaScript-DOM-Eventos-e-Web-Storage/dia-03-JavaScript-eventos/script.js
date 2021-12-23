@@ -27,6 +27,7 @@ function generateHoliday(day, dayItem) {
     getDaysList.appendChild(dayItem);
   }
 }
+
 function generateFriday(day, dayItem) {
   if (day === 4 || day === 11 || day === 18 || day === 25) {
     dayItem.className = 'day Friday';
@@ -52,6 +53,5 @@ function createDaysOfMonth() {
 }
 createDaysOfMonth();
 
-// function holidayFriday(day, tag) {
-// }
 // ========== Exercice 02 ========== //
+
