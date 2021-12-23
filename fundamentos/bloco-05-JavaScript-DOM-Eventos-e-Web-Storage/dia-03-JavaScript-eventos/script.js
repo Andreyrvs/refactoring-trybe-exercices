@@ -123,7 +123,6 @@ dayMouseOver();
 dayMouseOut();
 
 // ========== Exercice 07 ========== //
-
 function newTaskSpan(span) {
   const tasksContainer = document.querySelector('.my-tasks');
   const spanItem = document.createElement('span');
@@ -131,3 +130,14 @@ function newTaskSpan(span) {
   tasksContainer.appendChild(spanItem);
 }
 newTaskSpan('Nadar');
+
+// ========== Exercice 08 ========== //
+function newTaskDiv(color) {
+  const tasksContainer = document.querySelector('.my-tasks');
+  const divItem = document.createElement('div');
+
+  divItem.className = 'task';
+  divItem.style.backgroundColor = color;
+  tasksContainer.appendChild(divItem);
+}
+newTaskDiv('red');
