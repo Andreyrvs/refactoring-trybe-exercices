@@ -67,3 +67,6 @@ mainContent.removeChild(leftContent);
 
 // ===== Exercice alteracoes e remocoes 04 ===== //
 rightContent.style.margin = 'auto';
+
+// ===== Exercice alteracoes e remocoes 05 ===== //
+centerContent.style.backgroundColor = 'darkGreen'
