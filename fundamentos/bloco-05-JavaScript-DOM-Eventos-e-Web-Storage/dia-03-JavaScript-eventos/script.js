@@ -101,26 +101,30 @@ const dezFridays = [4, 11, 18, 25];
 displayFriday(dezFridays);
 
 // ========== Exercice 06 ========== //
-function dayMouseOver() {
-  const getDay = document.querySelector('#days');
+// function dayMouseOver() {
+//   const getDay = document.querySelector('#days');
+//   getDay.addEventListener('mouseover', (event) => {
+//     // if (event.target.className === 'day' || event.target.className === 'day friday' || event.target.className == 'day holiday') {
+//       // event.target.style.transform = 'scale(1.9)';
+//       // }
+      
+//       event.target.style.fontSize = '31px';
+//       event.target.style.fontWeight = '600';
+//   });
+// }
 
-  getDay.addEventListener('mouseover', (event) => {
-    event.target.style.fontSize = '31px';
-    event.target.style.fontWeight = '600';
-  });
-}
+// function dayMouseOut() {
+//   const getDay = document.querySelector('#days');
 
-function dayMouseOut() {
-  const getDay = document.querySelector('#days');
+//   getDay.addEventListener('mouseout', (event) => {
+//     // event.target.style.transform = 'scale(1)';
+//     event.target.style.fontWeight = '200';
+//     event.target.style.fontSize = '20px';
+//   });
+// }
 
-  getDay.addEventListener('mouseout', (event) => {
-    event.target.style.fontWeight = '200';
-    event.target.style.fontSize = '20px';
-  });
-}
-
-dayMouseOver();
-dayMouseOut();
+// dayMouseOver();
+// dayMouseOut();
 
 // ========== Exercice 07 ========== //
 function newTaskSpan(span) {
@@ -156,3 +160,38 @@ function taskSelected() {
   });
 }
 taskSelected();
+
+// ========== Exercice 10 ========== //
+function taskColor() {
+  const selectedTask = document.getElementsByClassName('task selected');
+  const days = document.querySelector('#days');
+  const taskDiv = document.querySelector('.task');
+  const taskColor = taskDiv.style.backgroundColor;
+
+  days.addEventListener('click', (event) => {
+    let eventTargetColor = event.target.style.color;
+
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119, 119, 119)';
+    }
+  });
+}
+taskColor();
+
+// ========== Exercice Bonus ========== //
+
+// ========== A+ ========== //
+function taskMousePointer() {
+  const task = document.querySelector('.task');
+  task.style.cursor = 'pointer';
+}
+taskMousePointer();
+
+function daysMousePointer() {
+  const days = document.querySelector('#days');
+  days.style.cursor = 'pointer';
+}
+daysMousePointer();
