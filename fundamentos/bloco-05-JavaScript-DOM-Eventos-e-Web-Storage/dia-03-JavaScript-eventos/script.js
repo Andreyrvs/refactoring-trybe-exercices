@@ -101,30 +101,30 @@ const dezFridays = [4, 11, 18, 25];
 displayFriday(dezFridays);
 
 // ========== Exercice 06 ========== //
-// function dayMouseOver() {
-//   const getDay = document.querySelector('#days');
-//   getDay.addEventListener('mouseover', (event) => {
-//     // if (event.target.className === 'day' || event.target.className === 'day friday' || event.target.className == 'day holiday') {
-//       // event.target.style.transform = 'scale(1.9)';
-//       // }
+/* function dayMouseOver() {
+  const getDay = document.querySelector('#days');
+  getDay.addEventListener('mouseover', (event) => {
+    // if (event.target.className === 'day' || event.target.className === 'day friday' || event.target.className == 'day holiday') {
+      // event.target.style.transform = 'scale(1.9)';
+      // }
       
-//       event.target.style.fontSize = '31px';
-//       event.target.style.fontWeight = '600';
-//   });
-// }
+      event.target.style.fontSize = '31px';
+      event.target.style.fontWeight = '600';
+  });
+}
 
-// function dayMouseOut() {
-//   const getDay = document.querySelector('#days');
+function dayMouseOut() {
+  const getDay = document.querySelector('#days');
 
-//   getDay.addEventListener('mouseout', (event) => {
-//     // event.target.style.transform = 'scale(1)';
-//     event.target.style.fontWeight = '200';
-//     event.target.style.fontSize = '20px';
-//   });
-// }
+  getDay.addEventListener('mouseout', (event) => {
+    // event.target.style.transform = 'scale(1)';
+    event.target.style.fontWeight = '200';
+    event.target.style.fontSize = '20px';
+  });
+}
 
-// dayMouseOver();
-// dayMouseOut();
+dayMouseOver();
+dayMouseOut(); */
 
 // ========== Exercice 07 ========== //
 function newTaskSpan(span) {
@@ -133,7 +133,7 @@ function newTaskSpan(span) {
   spanItem.innerText = span;
   tasksContainer.appendChild(spanItem);
 }
-newTaskSpan('Nadar');
+newTaskSpan('Programar');
 
 // ========== Exercice 08 ========== //
 function newTaskDiv(color) {
@@ -144,7 +144,7 @@ function newTaskDiv(color) {
   divItem.style.backgroundColor = color;
   tasksContainer.appendChild(divItem);
 }
-newTaskDiv('red');
+newTaskDiv('darkred');
 
 // ========== Exercice 09 ========== //
 function taskSelected() {
