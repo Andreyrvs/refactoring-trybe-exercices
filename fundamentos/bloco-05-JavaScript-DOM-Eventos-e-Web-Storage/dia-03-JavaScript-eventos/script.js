@@ -142,7 +142,7 @@ function newTaskDiv(color) {
 }
 newTaskDiv('red');
 
-// ========== Exercice 08 ========== //
+// ========== Exercice 09 ========== //
 function taskSelected() {
   const selectedTask = document.getElementsByClassName('task selected')
   const getTask = document.querySelector('.task');
