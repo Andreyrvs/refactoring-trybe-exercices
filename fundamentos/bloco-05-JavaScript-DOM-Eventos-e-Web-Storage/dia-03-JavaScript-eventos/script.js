@@ -83,7 +83,7 @@ btnSextaFeira();
 // ========== Exercice 05 ========== //
 function displayFriday(fridaysArray) {
   const getFridayBtn = document.querySelector('#btn-friday');
-  let fridays = document.getElementsByClassName('friday');
+  const fridays = document.getElementsByClassName('friday');
   const newFridayText = 'Sexta-feiraa';
 
   getFridayBtn.addEventListener('click', () => {
@@ -148,7 +148,7 @@ newTaskDiv('darkred');
 
 // ========== Exercice 09 ========== //
 function taskSelected() {
-  const selectedTask = document.getElementsByClassName('task selected')
+  const selectedTask = document.getElementsByClassName('task selected');
   const getTask = document.querySelector('.task');
 
   getTask.addEventListener('click', (event) => {
@@ -169,10 +169,10 @@ function taskColor() {
   const taskColor = taskDiv.style.backgroundColor;
 
   days.addEventListener('click', (event) => {
-    let eventTargetColor = event.target.style.color;
+    const eventTargetColor = event.target.style.color;
 
     if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
-      let color = selectedTask[0].style.backgroundColor;
+      const color = selectedTask[0].style.backgroundColor;
       event.target.style.color = color;
     } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
       event.target.style.color = 'rgb(119, 119, 119)';
@@ -182,6 +182,32 @@ function taskColor() {
 taskColor();
 
 // ========== Exercice Bonus ========== //
+function addNewTask() {
+  const getInput = document.querySelector('#task-input');
+  const addInputBtn = document.querySelector('#btn-add');
+  const getTaskList = document.querySelector('.task-list');
+
+  addInputBtn.addEventListener('click', () => {
+    if (getInput.value.length > 0) {
+      const newLI = document.createElement('li');
+      newLI.innerText = getInput.value;
+      getTaskList.appendChild(newLI);
+      getInput.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere.');
+    }
+  });
+  getInput.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter' && getInput.value.length > 0) {
+      const newLi = document.createElement('li');
+      newLi.innerText = getInput.value;
+
+      getTaskList.appendChild(newLi);
+      getInput.value = '';
+    }
+  });
+}
+addNewTask();
 
 // ========== A+ ========== //
 function taskMousePointer() {
