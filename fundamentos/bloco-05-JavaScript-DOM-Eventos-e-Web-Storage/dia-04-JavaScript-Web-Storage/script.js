@@ -64,16 +64,16 @@ for (let index = 0; index < lineHeightBtns.length; index += 1) {
 function setFontFamily(font) {
   const paragraphs = document.querySelectorAll('.content');
   for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.fontFamily = font
+    paragraphs[index].style.fontFamily = font;
   }
-  localStorage.setItem('fontFamily', font)
+  localStorage.setItem('fontFamily', font);
 }
 
 const fontFamilyBtns = document.querySelectorAll('#font-family');
 for (let index = 0; index < fontFamilyBtns.length; index += 1) {
   fontFamilyBtns[index].addEventListener('click', (event) => {
     setFontFamily(event.target.innerHTML);
-  })
+  });
 }
 
 // ========= Inicializador das Funcoes ========= //
