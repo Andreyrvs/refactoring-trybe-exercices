@@ -35,6 +35,6 @@ function initialRenderization() {
 
 button.addEventListener('click', addPhraseToLocalStorage);
 
-window.onload = function() {
+window.onload = () => {
   initialRenderization();
 };
