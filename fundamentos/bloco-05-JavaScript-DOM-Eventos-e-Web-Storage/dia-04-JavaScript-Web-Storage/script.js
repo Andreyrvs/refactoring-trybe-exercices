@@ -9,7 +9,7 @@ function setBackgroundColor(color) {
 const bgColorBtns = document.querySelectorAll('#background-color>button');
 for (let index = 0; index < bgColorBtns.length; index += 1) {
   bgColorBtns[index].addEventListener('click', (event) => {
-    setBackgroundColor(event.target.innerHTML);
+    setBackgroundColor(event.target.value);
   });
 }
 
