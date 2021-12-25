@@ -9,7 +9,7 @@ function setBackgroundColor(color) {
 const bgColorBtns = document.querySelectorAll('#background-color>button');
 for (let index = 0; index < bgColorBtns.length; index += 1) {
   bgColorBtns[index].addEventListener('click', (event) => {
-    setBackgroundColor(event.target.value);
+    setBackgroundColor(event.target.innerHTML);
   });
 }
 
@@ -42,14 +42,14 @@ const fontSizeBtns = document.querySelectorAll('#font-size>button');
 for (let index = 0; index < fontSizeBtns.length; index += 1) {
   fontSizeBtns[index].addEventListener('click', (event) => {
     setFontSize(event.target.innerHTML);
-  }); 
+  });
 }
 
 // ========= Exercice 04 ========= //
 function setLineHeight(Height) {
   const paragraphs = document.querySelectorAll('.content');
   for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.lineHeight = Height; 
+    paragraphs[index].style.lineHeight = Height;
   }
 }
 
