@@ -1,6 +1,6 @@
 body {
   margin: 10px;
-  background-color: rgba(53, 53, 53, 0.698);
+  background-color: rgb(235, 235, 235);
 }
 .preferences {
   display: flex;
