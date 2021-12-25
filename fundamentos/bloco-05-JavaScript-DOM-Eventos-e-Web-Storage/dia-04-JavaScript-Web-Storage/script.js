@@ -17,30 +17,49 @@ for (let index = 0; index < bgColorBtns.length; index += 1) {
 function setFontColor(color) {
   const paragraphs = document.querySelectorAll('.paragraph');
   for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.color = color
+    paragraphs[index].style.color = color;
   }
   localStorage.setItem('fontColor', color);
 }
 
-const fontColorBtns = document.querySelectorAll('#font-color>button')
+const fontColorBtns = document.querySelectorAll('#font-color>button');
 for (let index = 0; index < fontColorBtns.length; index += 1) {
   fontColorBtns[index].addEventListener('click', (event) => {
     setFontColor(event.target.innerHTML);
-  })
+  });
 }
 
 // ========= Exercice 03 ========= //
+function setFontSize(size) {
+  const paragraphs = document.querySelectorAll('.paragraph');
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    paragraphs[index].style.fontSize = size;
+  }
+  localStorage.setItem('fontSize', size);
+}
+
+const fontSizeBtns = document.querySelectorAll('#font-size>button');
+for (let index = 0; index < fontSizeBtns.length; index += 1) {
+  fontSizeBtns[index].addEventListener('click', (event) => {
+    setFontSize(event.target.innerHTML);
+  }); 
+}
+
+// ========= Exercice 04 ========= //
 
 
+// ========= Inicializador das Funcoes ========= //
 function initialize() {
   const backgroundColor = localStorage.getItem('backgroundColor');
-  if (backgroundColor) return setBackgroundColor(backgroundColor);
+  if (backgroundColor) setBackgroundColor(backgroundColor);
 
   const fontColor = localStorage.getItem('fontColor');
-  if (fontColor) return setFontColor(fontColor);
+  if (fontColor) setFontColor(fontColor);
+
+  const fontSize = localStorage.getItem('fontSize');
+  if (fontColorBtns) setFontSize(fontSize);
 }
 
 window.onload = () => {
-  setBackgroundColor();
   initialize();
 };
