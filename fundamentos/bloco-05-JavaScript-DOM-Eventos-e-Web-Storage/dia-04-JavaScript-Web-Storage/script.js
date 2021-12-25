@@ -17,7 +17,7 @@ for (let index = 0; index < bgColorBtns.length; index += 1) {
 function setFontColor(color) {
   const paragraphs = document.querySelectorAll('.paragraph');
   for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.color = color;
+    paragraphs[index].style.color = color
   }
   localStorage.setItem('fontColor', color);
 }
