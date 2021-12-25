@@ -46,7 +46,19 @@ for (let index = 0; index < fontSizeBtns.length; index += 1) {
 }
 
 // ========= Exercice 04 ========= //
+function setLineHeight(Height) {
+  const paragraphs = document.querySelectorAll('.content');
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    paragraphs[index].style.lineHeight = Height; 
+  }
+}
 
+const lineHeightBtns = document.querySelectorAll('#line-height>button');
+for (let index = 0; index < lineHeightBtns.length; index += 1) {
+  lineHeightBtns[index].addEventListener('click', (event) => {
+    setLineHeight(event.target.innerHTML);
+  });
+}
 
 // ========= Inicializador das Funcoes ========= //
 function initialize() {
@@ -58,6 +70,9 @@ function initialize() {
 
   const fontSize = localStorage.getItem('fontSize');
   if (fontColorBtns) setFontSize(fontSize);
+
+  const lineHeight = localStorage.getItem('lineHeight');
+  if (lineHeight) setLineHeight(lineHeight);
 }
 
 window.onload = () => {
