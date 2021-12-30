@@ -1,10 +1,7 @@
 // ========= 1 - Escreva uma função que dado um array de nomes e um nome retorne true se ele estiver contido e caso contrário, retorne false , use some ; ========= //
 const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
-const hasName = (arr, name) => {
-  // Adicione seu código aqui
-  return arr.some((element) => element === name);
-};
+const hasName = (arr, name) => arr.some((element) => element === name);
 
 console.log(hasName(names, 'Ana'));
 
@@ -17,9 +14,6 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-const verifyAges = (arr, minimumAge) => {
-  //Adicione seu código aqui
-  return arr.every((person) => person.age >= minimumAge);
-};
+const verifyAges = (arr, minimumAge) => arr.every((person) => person.age >= minimumAge);
 
 console.log(verifyAges(people, 18));
